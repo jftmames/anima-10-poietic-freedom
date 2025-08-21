@@ -24,3 +24,33 @@ make test
 
 # Compile the paper (needs TeX + biber)
 make -C paper
+```
+
+# Reproducibility
+
+Signals are proxies: mdl_delta uses zlib-compressed lengths; network_rupture uses simple graph stats (LCC/clustering).
+
+Replace with domain-grade metrics for your study.
+
+See docs/METHODS.md and docs/data_dictionary.md.
+
+
+
+
+# Contributing
+
+Thanks for considering a contribution!
+
+## Ways to contribute
+- Add or improve case files under `data/case_files/` following the schema.
+- Improve methods in `src/` (e.g., stronger MDL or graph metrics).
+- Expand docs in `docs/` and tests in `tests/`.
+
+## Workflow
+1. Fork the repo and create a feature branch.
+2. If adding data: validate your JSON matches the schema in `docs/data_dictionary.md`.
+3. Run tests and pipeline:
+   ```bash
+   make test
+   make pipeline
+
