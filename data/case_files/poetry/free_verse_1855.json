@@ -1,0 +1,20 @@
+{
+  "id": "anima:poetry:free_verse_1855",
+  "domain": "poetry",
+  "title": "Free Verse (1855)",
+  "locale": "USA",
+  "t0_interval": "1855",
+  "predecessors_Ot": ["rhymed_meter", "blank_verse"],
+  "closures_R": { "doctrinal": [], "material": [], "discursive": [] },
+  "evidence": { "NO": {}, "NOT_RC": {}, "NN": {}, "IF": {}, "Ctrl": {} },
+  "Lstar": { "NO": 1, "NOT_RC": 1, "NN": 1, "IF": 1, "Ctrl": 1, "score": 1.0 },
+  "corpora": {
+    "pre": "data/corpora/poetry/free_verse_1855/pre.txt",
+    "post": "data/corpora/poetry/free_verse_1855/post.txt"
+  },
+  "graphs": {
+    "pre": "data/graphs/poetry/free_verse_1855/pre.csv",
+    "post": "data/graphs/poetry/free_verse_1855/post.csv"
+  },
+  "sources": { "primary": [""], "secondary": [""] }
+}
