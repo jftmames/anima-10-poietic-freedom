@@ -1,0 +1,28 @@
+{
+  "title": "ANIMa-10: Poietic Freedom — Data & Code",
+  "upload_type": "software",
+  "description": "Minimal, public-data toolkit for auditing poietic acts via Free* (FDP) and L*. Includes case schema, demo cases, and Python code for signals and scoring.",
+  "creators": [
+    {
+      "name": "Fernández Tamames, José",
+      "orcid": "0009-0007-8851-9833",
+      "affiliation": "UNIE University — Madrid, Spain"
+    }
+  ],
+  "keywords": [
+    "poietic freedom",
+    "instituted novelty",
+    "Free*",
+    "L*",
+    "MDL delta",
+    "network rupture"
+  ],
+  "license": "mit-license",
+  "related_identifiers": [
+    {
+      "relation": "isSupplementTo",
+      "identifier": "10.5281/zenodo.TBD"
+    }
+  ],
+  "notes": "Data in data/ and docs/ are under CC-BY-4.0; code is MIT."
+}
