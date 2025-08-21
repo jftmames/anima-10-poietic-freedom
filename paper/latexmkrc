@@ -1,0 +1,5 @@
+# latexmk configuration for XeLaTeX + biber
+$pdf_mode = 1;
+$pdflatex = 'xelatex -interaction=nonstopmode -halt-on-error %O %S';
+$biber = 'biber %O %B';
+$bibtex_use = 2;
