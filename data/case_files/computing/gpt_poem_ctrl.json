@@ -1,0 +1,20 @@
+{
+  "id": "anima:computing:gpt_poem_ctrl",
+  "domain": "computing",
+  "title": "GPT Poem (control)",
+  "locale": "—",
+  "t0_interval": "2023",
+  "predecessors_Ot": ["schiller_poetry"],
+  "closures_R": { "doctrinal": [], "material": [], "discursive": [] },
+  "evidence": { "NO": {}, "NOT_RC": {}, "NN": { "alternatives_present": true }, "IF": {}, "Ctrl": {} },
+  "Lstar": { "NO": 0, "NOT_RC": 0, "NN": 1, "IF": 0, "Ctrl": 0, "score": 0.20 },
+  "corpora": {
+    "pre": "data/corpora/computing/gpt_poem_ctrl/pre.txt",
+    "post": "data/corpora/computing/gpt_poem_ctrl/post.txt"
+  },
+  "graphs": {
+    "pre": "data/graphs/computing/gpt_poem_ctrl/pre.csv",
+    "post": "data/graphs/computing/gpt_poem_ctrl/post.csv"
+  },
+  "sources": { "primary": [""], "secondary": [""] }
+}
