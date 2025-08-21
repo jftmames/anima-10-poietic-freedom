@@ -1,0 +1,20 @@
+{
+  "id": "anima:architecture:dom_ino_1914",
+  "domain": "architecture",
+  "title": "Dom-Ino System (1914)",
+  "locale": "France",
+  "t0_interval": "1914",
+  "predecessors_Ot": ["load_bearing_walls", "steel_frame_1900s"],
+  "closures_R": { "doctrinal": [], "material": [], "discursive": [] },
+  "evidence": { "NO": {}, "NOT_RC": {}, "NN": {}, "IF": {}, "Ctrl": {} },
+  "Lstar": { "NO": 1, "NOT_RC": 1, "NN": 1, "IF": 1, "Ctrl": 1, "score": 1.0 },
+  "corpora": {
+    "pre": "data/corpora/architecture/dom_ino_1914/pre.txt",
+    "post": "data/corpora/architecture/dom_ino_1914/post.txt"
+  },
+  "graphs": {
+    "pre": "data/graphs/architecture/dom_ino_1914/pre.csv",
+    "post": "data/graphs/architecture/dom_ino_1914/post.csv"
+  },
+  "sources": { "primary": [""], "secondary": [""] }
+}
