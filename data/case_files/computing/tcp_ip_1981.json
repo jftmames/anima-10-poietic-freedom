@@ -1,0 +1,20 @@
+{
+  "id": "anima:computing:tcp_ip_1981",
+  "domain": "computing",
+  "title": "TCP/IP Suite (1981)",
+  "locale": "USA",
+  "t0_interval": "1981",
+  "predecessors_Ot": ["arpanet_ncp", "x25", "osi_drafts"],
+  "closures_R": { "doctrinal": [], "material": [], "discursive": [] },
+  "evidence": { "NO": {}, "NOT_RC": {}, "NN": {}, "IF": {}, "Ctrl": {} },
+  "Lstar": { "NO": 1, "NOT_RC": 1, "NN": 1, "IF": 1, "Ctrl": 1, "score": 1.0 },
+  "corpora": {
+    "pre": "data/corpora/computing/tcp_ip_1981/pre.txt",
+    "post": "data/corpora/computing/tcp_ip_1981/post.txt"
+  },
+  "graphs": {
+    "pre": "data/graphs/computing/tcp_ip_1981/pre.csv",
+    "post": "data/graphs/computing/tcp_ip_1981/post.csv"
+  },
+  "sources": { "primary": [""], "secondary": [""] }
+}
