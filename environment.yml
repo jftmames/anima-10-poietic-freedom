@@ -1,0 +1,13 @@
+name: anima10
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.10
+  - numpy
+  - pandas
+  - networkx
+  - scipy
+  - matplotlib
+  - pip
+  - pip:
+      - pytest
