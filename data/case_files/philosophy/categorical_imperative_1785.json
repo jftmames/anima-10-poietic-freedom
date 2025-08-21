@@ -1,0 +1,20 @@
+{
+  "id": "anima:philosophy:categorical_imperative_1785",
+  "domain": "philosophy",
+  "title": "Categorical Imperative (1785)",
+  "locale": "Königsberg",
+  "t0_interval": "1785",
+  "predecessors_Ot": ["prudential_maxims", "hypothetical_imperatives"],
+  "closures_R": { "doctrinal": [], "material": [], "discursive": [] },
+  "evidence": { "NO": {}, "NOT_RC": {}, "NN": {}, "IF": {}, "Ctrl": {} },
+  "Lstar": { "NO": 1, "NOT_RC": 1, "NN": 1, "IF": 1, "Ctrl": 1, "score": 1.0 },
+  "corpora": {
+    "pre": "data/corpora/philosophy/categorical_imperative_1785/pre.txt",
+    "post": "data/corpora/philosophy/categorical_imperative_1785/post.txt"
+  },
+  "graphs": {
+    "pre": "data/graphs/philosophy/categorical_imperative_1785/pre.csv",
+    "post": "data/graphs/philosophy/categorical_imperative_1785/post.csv"
+  },
+  "sources": { "primary": [""], "secondary": [""] }
+}
