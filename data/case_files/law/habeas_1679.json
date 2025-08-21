@@ -1,0 +1,20 @@
+{
+  "id": "anima:law:habeas_1679",
+  "domain": "law",
+  "title": "Habeas Corpus Act (1679)",
+  "locale": "England",
+  "t0_interval": "1679",
+  "predecessors_Ot": ["writ_de_homine_replegiando", "common_law_petitions", "procedural_remedies_16c"],
+  "closures_R": { "doctrinal": ["feudal_remedies", "royal_prerogative"], "material": ["record_keeping_practices"], "discursive": ["common_law_canon"] },
+  "evidence": { "NO": {}, "NOT_RC": {}, "NN": {}, "IF": {"traces":["drafts","parliamentary_minutes"]}, "Ctrl": {"authorship": "collective (Parliament/Courts)"} },
+  "Lstar": { "NO": 1, "NOT_RC": 1, "NN": 1, "IF": 1, "Ctrl": 1, "score": 1.0 },
+  "corpora": {
+    "pre": "data/corpora/law/habeas_1679/pre.txt",
+    "post": "data/corpora/law/habeas_1679/post.txt"
+  },
+  "graphs": {
+    "pre": "data/graphs/law/habeas_1679/pre.csv",
+    "post": "data/graphs/law/habeas_1679/post.csv"
+  },
+  "sources": { "primary": [""], "secondary": [""] }
+}
