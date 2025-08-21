@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+title: "ANIMa-10: Poietic Freedom — Data & Code"
+message: "If you use this repository, please cite it as below."
+type: software
+authors:
+  - family-names: "Fernández Tamames"
+    given-names: "José"
+    orcid: "https://orcid.org/0009-0007-8851-9833"
+repository-code: "https://github.com/ORG/anima-10-poietic-freedom"
+version: "1.0.0"
+date-released: "2025-08-22"
+license: "MIT"
+keywords:
+  - poietic freedom
+  - Free*
+  - instituted novelty
+  - L*
+  - MDL delta
+  - network rupture
