@@ -1,0 +1,20 @@
+{
+  "id": "anima:physics:special_relativity_1905",
+  "domain": "physics",
+  "title": "Special Relativity (1905)",
+  "locale": "Bern",
+  "t0_interval": "1905",
+  "predecessors_Ot": ["lorentz_ether", "newtonian_mechanics"],
+  "closures_R": { "doctrinal": [], "material": [], "discursive": [] },
+  "evidence": { "NO": {}, "NOT_RC": {}, "NN": {}, "IF": {}, "Ctrl": {} },
+  "Lstar": { "NO": 1, "NOT_RC": 1, "NN": 1, "IF": 1, "Ctrl": 1, "score": 1.0 },
+  "corpora": {
+    "pre": "data/corpora/physics/special_relativity_1905/pre.txt",
+    "post": "data/corpora/physics/special_relativity_1905/post.txt"
+  },
+  "graphs": {
+    "pre": "data/graphs/physics/special_relativity_1905/pre.csv",
+    "post": "data/graphs/physics/special_relativity_1905/post.csv"
+  },
+  "sources": { "primary": [""], "secondary": [""] }
+}
