@@ -1,8 +1,11 @@
 # ANIMa-10: Poietic Freedom — Data & Code
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16923281.svg)](https://doi.org/10.5281/zenodo.16923281)
+
 [![CI](https://github.com/ORG/anima-10-poietic-freedom/actions/workflows/ci.yml/badge.svg)](https://github.com/ORG/anima-10-poietic-freedom/actions/workflows/ci.yml)
+
 [![License: MIT](https://img.shields.io/badge/Code%20License-MIT-blue.svg)](LICENSE-MIT)
+
 [![Data: CC BY 4.0](https://img.shields.io/badge/Data%20License-CC%20BY%204.0-lightgrey.svg)](LICENSE-CC-BY-4.0)
 
 This repository accompanies the paper **“Creative Freedom: Novelty, Non-Necessity, and Self-Determination Without Prior Rule.”**  
