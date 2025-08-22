@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16923281.svg)](https://doi.org/10.5281/zenodo.16923281)
 
-[![CI](https://github.com/jftmames/anima-10-poietic-freedom/actions/workflows/ci.yml/badge.svg)]([https://github.com/ORG/anima-10-poietic-freedom/action](https://github.com/jftmames/anima-10-poietic-freedom/workflows/ci.yml)
+[![CI]([https://github.com/ORG/anima-10-poietic-freedom/action](https://github.com/jftmames/anima-10-poietic-freedom/workflows/ci.yml)
 
 [![License: MIT](https://img.shields.io/badge/Code%20License-MIT-blue.svg)](LICENSE-MIT)
 
