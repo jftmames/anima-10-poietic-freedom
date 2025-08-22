@@ -2,12 +2,12 @@ name: anima10
 channels:
   - conda-forge
 dependencies:
-  - python>=3.10
-  - numpy
-  - pandas
-  - networkx
-  - scipy
-  - matplotlib
+  - python=3.10
+  - numpy=1.26.4
+  - pandas=2.2.0
+  - networkx=3.2.1
+  - scipy=1.11.4
+  - matplotlib=3.8.2
   - pip
   - pip:
-      - pytest
+      - pytest==7.4.4
