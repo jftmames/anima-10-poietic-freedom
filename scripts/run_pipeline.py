@@ -3,7 +3,6 @@ import os
 import pandas as pd
 from src.pipeline import eval_case
 
-
 def main():
     rows = [eval_case(p) for p in glob.glob("data/case_files/**/**/*.json", recursive=True)]
     os.makedirs("outputs", exist_ok=True)
