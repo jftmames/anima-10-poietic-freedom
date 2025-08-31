@@ -10,13 +10,16 @@ from src.lstar import l_star, DEFAULT_WEIGHTS
 
 st.title("ANIMa-10 Poietic Freedom Demo")
 
-case_files = ["" ] + sorted(glob.glob("data/case_files/**/**/*.json", recursive=True))
+case_files = [""] + sorted(glob.glob("data/case_files/**/**/*.json", recursive=True))
 case_path = st.selectbox("Choose a case file", case_files)
 
 if case_path:
     result = eval_case(case_path)
     st.subheader("Case results")
-    st.json(result)
+    if "error" in result:
+        st.error(result["error"])
+    else:
+        st.json(result)
 
 st.header("Manual Example")
 pre_text = st.text_area("Pre text", height=150)
