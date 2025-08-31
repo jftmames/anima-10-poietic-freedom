@@ -13,8 +13,8 @@
     "post": "data/corpora/craft/hard_paste_porcelain_1710/post.txt"
   },
   "graphs": {
-    "pre": "data/graphs/craft/hard_paste_porcelain_1710/pre.csv",
-    "post": "data/graphs/craft/hard_paste_porcelain_1710/post.csv"
+    "pre": "data/corpora/craft/hard_paste_porcelain_1710/pre.csv",
+    "post": "data/corpora/craft/hard_paste_porcelain_1710/post.csv"
   },
   "sources": { "primary": [""], "secondary": [""] }
 }

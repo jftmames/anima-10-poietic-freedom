@@ -1,1 +1,20 @@
-
+{
+  "id": "anima:commerce:double_entry_1494",
+  "domain": "commerce",
+  "title": "Double-Entry Bookkeeping (1494)",
+  "locale": "Venice",
+  "t0_interval": "1494",
+  "predecessors_Ot": ["merchant_ledgers", "single_entry", "abbaco_notation"],
+  "closures_R": { "doctrinal": [], "material": [], "discursive": [] },
+  "evidence": { "NO": {}, "NOT_RC": {}, "NN": {}, "IF": {}, "Ctrl": {} },
+  "Lstar": { "NO": 1, "NOT_RC": 1, "NN": 1, "IF": 1, "Ctrl": 1, "score": 1.0 },
+  "corpora": {
+    "pre": "data/corpora/commerce/double_entry_1494/pre.txt",
+    "post": "data/corpora/commerce/double_entry_1494/post.txt"
+  },
+  "graphs": {
+    "pre": "data/corpora/commerce/double_entry_1494/pre.csv",
+    "post": "data/corpora/commerce/double_entry_1494/post.csv"
+  },
+  "sources": { "primary": [""], "secondary": [""] }
+}

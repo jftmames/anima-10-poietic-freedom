@@ -13,8 +13,8 @@
     "post": "data/corpora/painting/cubism_1907/post.txt"
   },
   "graphs": {
-    "pre": "data/graphs/painting/cubism_1907/pre.csv",
-    "post": "data/graphs/painting/cubism_1907/post.csv"
+    "pre": "data/corpora/painting/cubism_1907/pre.csv",
+    "post": "data/corpora/painting/cubism_1907/post.csv"
   },
   "sources": { "primary": [""], "secondary": [""] }
 }

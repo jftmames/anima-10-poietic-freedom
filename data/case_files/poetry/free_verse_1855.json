@@ -13,8 +13,8 @@
     "post": "data/corpora/poetry/free_verse_1855/post.txt"
   },
   "graphs": {
-    "pre": "data/graphs/poetry/free_verse_1855/pre.csv",
-    "post": "data/graphs/poetry/free_verse_1855/post.csv"
+    "pre": "data/corpora/poetry/free_verse_1855/pre.csv",
+    "post": "data/corpora/poetry/free_verse_1855/post.csv"
   },
   "sources": { "primary": [""], "secondary": [""] }
 }
