@@ -13,8 +13,8 @@
     "post": "data/corpora/law/habeas_1679/post.txt"
   },
   "graphs": {
-    "pre": "data/graphs/law/habeas_1679/pre.csv",
-    "post": "data/graphs/law/habeas_1679/post.csv"
+    "pre": "data/corpora/law/habeas_1679/pre.csv",
+    "post": "data/corpora/law/habeas_1679/post.csv"
   },
   "sources": { "primary": [""], "secondary": [""] }
 }
