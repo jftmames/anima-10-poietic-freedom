@@ -13,8 +13,8 @@
     "post": "data/corpora/mathematics/non_euclidean_1832/post.txt"
   },
   "graphs": {
-    "pre": "data/graphs/mathematics/non_euclidean_1832/pre.csv",
-    "post": "data/graphs/mathematics/non_euclidean_1832/post.csv"
+    "pre": "data/corpora/mathematics/non_euclidean_1832/pre.csv",
+    "post": "data/corpora/mathematics/non_euclidean_1832/post.csv"
   },
   "sources": { "primary": [""], "secondary": [""] }
 }
