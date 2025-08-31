@@ -2,8 +2,8 @@ import json
 
 from typing import Dict, Any
 from src.lstar import l_star
-from .mdl_delta import mdl_delta
-from .network_rupture import load_edge_list_csv, rupture_score
+from src.mdl_delta import mdl_delta
+from src.network_rupture import load_edge_list_csv, rupture_score
 
 
 def load_text(path: str) -> str:
