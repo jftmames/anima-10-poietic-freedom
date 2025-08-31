@@ -1,95 +1,26 @@
 import streamlit as st
-import json
-import glob
-import os
-from src.lstar import l_star # Importamos la función para calcular L*
 
-# --- CONFIGURACIÓN DE LA PÁGINA ---
+# Esta será la nueva página de inicio que el servidor ejecutará.
 st.set_page_config(
-    page_title="ANIMa-10: Poietic Freedom",
-    page_icon="🎨",
-    layout="wide"
+    page_title="Bienvenida | ANIMa-10",
+    page_icon="👋",
 )
 
-# --- TÍTULO PRINCIPAL ---
-st.title("ANIMa-10: Explorador de Libertad Poiética 🎨")
-st.write("Esta aplicación permite analizar los casos de estudio del proyecto usando el Poietic Index `L*`.")
+# Ocultamos el nombre "Streamlit app" del menú y le damos un título a la página.
+st.title("Bienvenido al Explorador de Libertad Poiética 👋")
 
-# --- FUNCIÓN PARA CARGAR DATOS ---
-# Una función para cargar el contenido de un archivo JSON de forma segura.
-def load_case_data(file_path):
-    try:
-        with open(file_path, "r", encoding="utf-8") as f:
-            return json.load(f)
-    except Exception as e:
-        st.error(f"Error al cargar el archivo {os.path.basename(file_path)}: {e}")
-        return None
+st.sidebar.success("Selecciona una página para continuar.")
 
-# --- BARRA LATERAL CON EL SELECTOR ---
-st.sidebar.header("Selecciona un Caso de Estudio")
+st.markdown(
+    """
+    Esta aplicación interactiva es el complemento del paper **“Creative Freedom: Novelty, Non-Necessity, and Self-Determination Without Prior Rule.”**
 
-# Buscamos todos los archivos de casos
-case_files_paths = glob.glob("data/case_files/**/*.json", recursive=True)
+    ### ¿Cómo usar esta herramienta?
 
-if not case_files_paths:
-    st.sidebar.warning("No se encontraron casos de estudio.")
-else:
-    # Creamos una lista de nombres amigables para el menú
-    # Leemos el campo "title" de cada archivo JSON
-    case_titles = []
-    for path in case_files_paths:
-        data = load_case_data(path)
-        if data and 'title' in data:
-            case_titles.append(data['title'])
-        else:
-            # Si no hay título, usamos el nombre del archivo
-            case_titles.append(os.path.basename(path))
+    **👈 Selecciona una de las opciones del menú lateral** para comenzar:
 
-    # Creamos el menú desplegable en la barra lateral
-    selected_title = st.sidebar.selectbox(
-        "Elige un caso para analizar:",
-        options=case_titles
-    )
-
-    # --- LÓGICA PRINCIPAL DE LA PÁGINA ---
-    # Encontrar el archivo correspondiente al título seleccionado
-    selected_path = ""
-    for path in case_files_paths:
-        data = load_case_data(path)
-        if data and data.get('title') == selected_title:
-            selected_path = path
-            break
-
-    if selected_path:
-        # Cargamos los datos del caso seleccionado
-        case_data = load_case_data(selected_path)
-        
-        if case_data:
-            st.header(f"Análisis de: {case_data.get('title', 'N/A')}")
-            
-            # Usamos columnas para organizar la información
-            col1, col2 = st.columns([1, 1])
-
-            with col1:
-                st.subheader("Puntuación Poietic Index (L*)")
-                lstar_scores = case_data.get("Lstar", {})
-                
-                # Calculamos el L* score final
-                final_score = l_star(lstar_scores)
-                
-                # Mostramos el resultado con un widget de métrica
-                st.metric(label="L* Score", value=f"{final_score:.2f}")
-
-                st.write("Puntuaciones por criterio:")
-                st.json(lstar_scores)
-
-            with col2:
-                st.subheader("Metadatos del Caso")
-                st.info(f"**ID:** `{case_data.get('id', 'N/A')}`")
-                st.info(f"**Dominio:** {case_data.get('domain', 'N/A')}")
-                st.info(f"**Localización:** {case_data.get('locale', 'N/A')}")
-                st.info(f"**Fecha:** {case_data.get('t0_interval', 'N/A')}")
-
-            # Mostramos el contenido completo del JSON en un expansor
-            with st.expander("Ver datos completos del archivo JSON"):
-                st.json(case_data)
+    - **Explorador de Casos:** Visualiza y analiza los casos de estudio del proyecto.
+    - **Introducción:** Lee el resumen y descarga el paper completo.
+    - **Analizador Interactivo:** Prueba las métricas con tus propios textos y grafos.
+    """
+)
