@@ -13,8 +13,8 @@
     "post": "data/corpora/physics/special_relativity_1905/post.txt"
   },
   "graphs": {
-    "pre": "data/graphs/physics/special_relativity_1905/pre.csv",
-    "post": "data/graphs/physics/special_relativity_1905/post.csv"
+    "pre": "data/corpora/physics/special_relativity_1905/pre.csv",
+    "post": "data/corpora/physics/special_relativity_1905/post.csv"
   },
   "sources": { "primary": [""], "secondary": [""] }
 }
