@@ -1,20 +1,32 @@
 import streamlit as st
 
-st.set_page_config(
-    page_title="Introducción",
-    page_icon="📄"
-)
+st.set_page_config(page_title="Introducción", page_icon="📄")
 
-st.title("📄 Introducción al Proyecto")
+st.title("📄 Creative Freedom: El Paper")
 
-st.header("¿Qué es la Libertad Poiética?")
-st.write("""
-Este proyecto explora el concepto de **libertad poiética**: la capacidad de crear realidades que no se pueden deducir de reglas o razones previas.
+st.header("Resumen (Abstract)")
 
-A diferencia de los modelos que ven la libertad como una simple elección entre opciones predefinidas, la libertad poiética se centra en actos que expanden lo que es posible, como por ejemplo:
-- La creación de nuevas leyes (ej. *habeas corpus*).
-- La invención de técnicas revolucionarias (ej. la porcelana).
-- La composición de formas artísticas inéditas.
+# Texto extraído del paper art3.pdf
+st.info("""
+Este artículo reconceptualiza la libertad humana como **libertad poiética**: la capacidad de instituir realidades no deducibles de reglas o razones previas. En contra de los modelos electivos dominantes —que reducen la agencia a seleccionar entre opciones predefinidas—, argumentamos que los casos paradigmáticos de libertad (ej., fundar instituciones legales, inventar técnicas, crear arte) implican una expansión ontológica en lugar de una optimización.
 """)
 
-st.success("Este es el nuevo contenido de la página de introducción. ¡El mensaje de ejemplo ha sido reemplazado!")
+st.markdown("---")
+
+# Botón para descargar el PDF del paper
+st.subheader("Descargar Artículo Completo")
+st.write("Puedes descargar el documento PDF completo para conocer la metodología en detalle.")
+
+# Leemos el archivo PDF en bytes para que el botón de descarga funcione
+try:
+    with open("pages/art3.pdf", "rb") as pdf_file:
+        PDFbyte = pdf_file.read()
+
+    st.download_button(
+        label="Descargar art3.pdf",
+        data=PDFbyte,
+        file_name="creative_freedom_paper.pdf",
+        mime='application/octet-stream'
+    )
+except FileNotFoundError:
+    st.error("No se pudo encontrar el archivo 'pages/art3.pdf'. Asegúrate de que el archivo está en la ubicación correcta.")
