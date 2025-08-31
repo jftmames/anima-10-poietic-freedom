@@ -13,8 +13,8 @@
     "post": "data/corpora/computing/gpt_poem_ctrl/post.txt"
   },
   "graphs": {
-    "pre": "data/graphs/computing/gpt_poem_ctrl/pre.csv",
-    "post": "data/graphs/computing/gpt_poem_ctrl/post.csv"
+    "pre": "data/corpora/computing/gpt_poem_ctrl/pre.csv",
+    "post": "data/corpora/computing/gpt_poem_ctrl/post.csv"
   },
   "sources": { "primary": [""], "secondary": [""] }
 }

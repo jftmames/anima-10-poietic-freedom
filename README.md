@@ -53,6 +53,16 @@ make pipeline
 >
 > Swap them for domain-grade metrics in your study (formal MDL, community/modularity, domain-controlled surprisal, etc.). See `docs/METHODS.md`.
 
+### C) Streamlit demo
+
+Launch an interactive app to explore case files or enter your own examples:
+
+```bash
+streamlit run streamlit_app.py
+```
+
+The app computes the proxy signals and `L*` for the selected inputs.
+
 ---
 
 ## Case File Schema (tl;dr)

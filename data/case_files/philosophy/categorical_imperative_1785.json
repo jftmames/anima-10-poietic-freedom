@@ -13,8 +13,8 @@
     "post": "data/corpora/philosophy/categorical_imperative_1785/post.txt"
   },
   "graphs": {
-    "pre": "data/graphs/philosophy/categorical_imperative_1785/pre.csv",
-    "post": "data/graphs/philosophy/categorical_imperative_1785/post.csv"
+    "pre": "data/corpora/philosophy/categorical_imperative_1785/pre.csv",
+    "post": "data/corpora/philosophy/categorical_imperative_1785/post.csv"
   },
   "sources": { "primary": [""], "secondary": [""] }
 }

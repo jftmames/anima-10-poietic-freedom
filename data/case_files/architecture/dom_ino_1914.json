@@ -13,8 +13,8 @@
     "post": "data/corpora/architecture/dom_ino_1914/post.txt"
   },
   "graphs": {
-    "pre": "data/graphs/architecture/dom_ino_1914/pre.csv",
-    "post": "data/graphs/architecture/dom_ino_1914/post.csv"
+    "pre": "data/corpora/architecture/dom_ino_1914/pre.csv",
+    "post": "data/corpora/architecture/dom_ino_1914/post.csv"
   },
   "sources": { "primary": [""], "secondary": [""] }
 }
