@@ -1,5 +1,8 @@
+import os
+import tempfile
+
 import streamlit as st
-import pandas as pd
+
 from src.mdl_delta import mdl_delta
 from src.network_rupture import load_edge_list_csv, rupture_score
 
@@ -26,17 +29,18 @@ with col2:
 
 st.markdown("---")
 
+
 # --- SECCIÓN DE ANÁLISIS Y RESULTADOS ---
 if st.button("Calcular Métricas", type="primary"):
-    
+
     st.header("Resultados del Análisis")
-    
+
     # Comprobamos que hay datos para analizar
     if not pre_text and not post_text and not pre_graph_file and not post_graph_file:
         st.warning("Por favor, introduce texto o sube archivos para analizar.")
     else:
         res_col1, res_col2 = st.columns(2)
-        
+
         # --- Cálculo de MDL-Delta ---
         with res_col1:
             st.subheader("MDL-Δ (Novedad Textual)")
@@ -54,21 +58,29 @@ if st.button("Calcular Métricas", type="primary"):
         with res_col2:
             st.subheader("Ruptura de Red")
             if pre_graph_file and post_graph_file:
+                tmp_pre_path = None
+                tmp_post_path = None
                 try:
-                    # Guardamos los archivos subidos temporalmente para que networkx los pueda leer
-                    with open("temp_pre.csv", "w") as f:
-                        f.write(pre_graph_file.getvalue().decode("utf-8"))
-                    with open("temp_post.csv", "w") as f:
-                        f.write(post_graph_file.getvalue().decode("utf-8"))
-                    
-                    g0 = load_edge_list_csv("temp_pre.csv")
-                    g1 = load_edge_list_csv("temp_post.csv")
-                    
+                    with tempfile.NamedTemporaryFile(mode="wb", suffix=".csv", delete=False) as tmp_pre:
+                        tmp_pre.write(pre_graph_file.getvalue())
+                        tmp_pre_path = tmp_pre.name
+
+                    with tempfile.NamedTemporaryFile(mode="wb", suffix=".csv", delete=False) as tmp_post:
+                        tmp_post.write(post_graph_file.getvalue())
+                        tmp_post_path = tmp_post.name
+
+                    g0 = load_edge_list_csv(tmp_pre_path)
+                    g1 = load_edge_list_csv(tmp_post_path)
+
                     rupture = rupture_score(g0, g1)
                     st.metric(label="Puntuación de Ruptura", value=f"{rupture:.4f}")
                     st.write("Mide el cambio en la estructura del grafo (componente conectado más grande y clustering). Un valor alto sugiere una reorganización estructural significativa.")
 
                 except Exception as e:
                     st.error(f"Error al procesar los archivos CSV: {e}")
+                finally:
+                    for path in (tmp_pre_path, tmp_post_path):
+                        if path and os.path.exists(path):
+                            os.remove(path)
             else:
                 st.info("Sube ambos archivos CSV para calcular la ruptura de red.")
